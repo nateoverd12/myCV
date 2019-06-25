@@ -198,7 +198,7 @@ body {
   display: flex;
   align-self: flex-end;
   padding: 1vh 1vw 0 1vw;
-  box-shadow: #ffc800 0px -26px 0px inset;
+  box-shadow: #ffc800 0px -3.4vmin 0px inset;
   margin: 0 5px 5px 0;
 }
 
