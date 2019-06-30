@@ -8,7 +8,7 @@ var swiper = new Swiper('.swiper-container', {
   // effect: 'fade',
   loop: true,
   autoplay:{
-    delay:300,
+    delay:240,
     autoplayDisableOnInteraction: true
   },
   keyboard: {
