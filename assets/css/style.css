@@ -26,6 +26,8 @@ body {
 }
 #div-intro strong {color:white;}
 
+#div-intro p {margin-bottom: 0}
+
 #div-person, h3 {
   font-size: 3.2vmax;
   color:white;
@@ -50,6 +52,8 @@ body {
   width: 5vmax;
   height: 5vmax;
 }
+
+#contact {height: 60px}
 
 #contact a {
   color: white;
@@ -206,7 +210,7 @@ body {
   font-size: 1.2vmax;
   display: flex;
   justify-content: flex-end;
-  padding-right: 3%;
+  padding:0 2%;
 }
 
 .swiper-slide .subtitle img {
@@ -215,29 +219,48 @@ body {
     width: 9vmin;
     height: 9vmin;
 }
+
+#clickNTrip {
+  padding:0.2vmin !important;
+  background-color:black;
+  border-radius: 0.7vmin !important;
+}
+
 .swiper-slide .subtitile a:hover {
     background-color: #cccccc;
 }
 
 .swiper-slide .text p, .swiper-slide .text li {
-  font-size: 1.4vmax;
   margin: 0;
 }
 
 .info {
-  height: 82%;
+  height: 84%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
+/* #portfolio {justify-content: flex-end !important} */
 
 .row {
   display: flex;
   justify-content: space-between;
 }
 
-@media screen and (max-aspect-ratio: 13/10) { .in-slide { padding-top: 110px ; padding-left:2% }}
-@media screen and (min-aspect-ratio: 13/10) { .in-slide { padding-left: 75px ; padding-top:2% }}
+@media screen and (max-aspect-ratio: 13/10) {
+  .in-slide { padding-top: 65px ; padding-left:2% }
+  .swiper-slide .text p, .swiper-slide .text li {
+    font-size: 1.2vmax;
+  }
+
+}
+@media screen and (min-aspect-ratio: 13/10) {
+  .in-slide { padding-left: 75px ; padding-top:2% }
+  .swiper-slide .text p, .swiper-slide .text li {
+    font-size: 2.3vmin;
+  }
+}
 
 .in-slide {
   width:100%;
@@ -440,3 +463,5 @@ body {
 #in-slide-4 {border: solid #666666 6px; }
 
 .black-text {color:black }
+
+ul {margin-top: 2px; margin-bottom: 1%}
