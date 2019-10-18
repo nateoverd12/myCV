@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="./../assets/css/swiper4-5-0.css">
+    <link rel="stylesheet" href="./../assets/css/style.css">
+</head>
+
+<body>
+    <div id="static" class="split">
+        <div id="div-photo">
+            <img id="photo" src="./../assets/images/myFace.png" alt="my face">
+            <div id="div-person">
+                <h3>Nathan</h3>
+                <h3>Pousset</h3>
+            </div>
+        </div>
+        <div id="div-intro">
+            <hr>
+            <p><strong>{% block jobTitle %}{% endblock %}</strong></br>
+                {% block summary %}{% endblock %}
+            </p>
+            <hr>
+            <div id="contact">
+                <h5><a href="mailto:nathan.pousset@protonmail.com">nathan.pousset@protonmail.com</a></br>07 50 38 79 74
+                </h5>
+                <div id="logos">
+                    <div id="white">
+                        <a href="https://github.com/nateoverd12" target="_blank"><svg>
+                                <use xlink:href="#githubIcon">
+                            </svg></a>
+                        <a href="./assets/{% block pdf_idiom %}{% endblock %}CV_Nathan-Pousset.pdf" target="_blank">
+                            <svg>
+                                <use xlink:href="#downloadIcon">
+                            </svg></a>
+                    </div>
+                    <div id="idioms">
+                        <a href="/fr">
+                            <svg>
+                                <use xlink:href="#franceIcon">
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg>
+                                <use xlink:href="#usIcon">
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="tabbar">
+            <div>
+                <input id="menu-1" type="radio" name="menu" checked>
+                <label id="label-1" class="hoverButton" for="menu-1">
+                    <svg>
+                        <use xlink:href="#skillIcon">
+                    </svg>
+                    <span>{% block bullet_skills %}{% endblock %}</span>
+                </label>
+                <input id="menu-2" type="radio" name="menu">
+                <label id="label-2" class="hoverButton" for="menu-2">
+                    <svg>
+                        <use xlink:href="#imageIcon">
+                    </svg>
+                    <span>{% block bullet_portfolio %}{% endblock %}</span>
+                </label>
+                <input id="menu-3" type="radio" name="menu">
+                <label id="label-3" class="hoverButton" for="menu-3">
+                    <svg>
+                        <use xlink:href="#studyIcon">
+                    </svg>
+                    <span class="black-text">{% block bullet_study %}{% endblock %}</span>
+                </label>
+                <input id="menu-4" type="radio" name="menu">
+                <label id="label-4" class="hoverButton" for="menu-4">
+                    <svg>
+                        <use xlink:href="#passionIcon">
+                    </svg>
+                    <span class="black-text">{% block bullet_hobby %}{% endblock %}</span>
+                </label>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+    <div id="slider" class="swiper-container split">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="in-slide" id="in-slide-1">
+                    <div class="info">
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block skill_1_title %}{% endblock %}</b>{% block skill_1_data %}{% endblock %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block skill_2_title %}{% endblock %}</b>{% block skill_2_data %}{% endblock %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block skill_3_title %}{% endblock %}</b>{% block skill_3_data %}{% endblock %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block skill_4_title %}{% endblock %}</b>{% block skill_4_data %}{% endblock %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block skill_5_title %}{% endblock %}</b>{% block skill_5_data %}{% endblock %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block skill_6_title %}{% endblock %}</b>{% block skill_6_data %}{% endblock %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block skill_7_title %}{% endblock %}</b>{% block skill_7_data %}{% endblock %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title" id="title-1" data-swiper-parallax="-300">
+                        <i>{% block skill_page_title %}{% endblock %}</i></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="in-slide" id="in-slide-2">
+                    <div class="info" id="portfolio">
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block project_1_name %}{% endblock %}</b></br>
+                                    <small>{% block project_1_subtitle_1 %}{% endblock %}
+                                        <i> {% block project_1_subtitle_2 %}{% endblock %}</i></small></br>
+                                    <ul>
+                                        <li><small>{% block project_1_bullet_1 %}{% endblock %}</small></li>
+                                        <li><small>{% block project_1_bullet_2 %}{% endblock %}</small>
+                                        </li>
+                                        <li><small>{% block project_1_bullet_3 %}{% endblock %}</small></li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="subtitle" data-swiper-parallax="-200"><img src="../assets/images/small-logo.png"
+                                    alt="logo click and trip" id="clickNTrip"></div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block project_2_name %}{% endblock %}</b></br>
+                                    <small>{% block project_2_subtitle_1 %}{% endblock %}
+                                        <i>{% block project_2_subtitle_2 %}{% endblock %}</i></small></br>
+                                    <ul>
+                                        <li><small>{% block project_2_bullet_1 %}{% endblock %}</small></li>
+                                        <li><small>{% block project_2_bullet_2 %}{% endblock %}</small></li>
+                                        <li><small>{% block project_2_bullet_3 %}{% endblock %}</small></li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="subtitle" data-swiper-parallax="-200"><a href="http://hubert.nathan-pousset.fr/"
+                                    target="_blank"><img src="../assets/images/icon_hubert_H_color.png"
+                                        alt="logo Hubert"></a></div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block project_3_name %}{% endblock %}</b></br><small><i>{% block project_3_subtitle %}{% endblock %}</i></small></br>
+                                    <ul>
+                                        <li><small>{% block project_3_bullet_1 %}{% endblock %}</small></li>
+                                        <li><small>{% block project_3_bullet_2 %}{% endblock %}</small></li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="subtitle" data-swiper-parallax="-200"><a
+                                    href="http://gamemap.nathan-pousset.fr/" target="_blank"><img
+                                        src="../assets/images/boatgame.JPG" alt="logo jeu carte au trésor"></a></div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block project_4_name %}{% endblock %}</b></br><small>
+                                        {% block project_4_subtitle_1 %}{% endblock %}<i>{% block project_4_subtitle_2 %}{% endblock %}</i></small>
+                                    <ul>
+                                        <li><small>{% block project_4_bullet_1 %}{% endblock %}</small></li>
+                                        <li><small>{% block project_4_bullet_2 %}{% endblock %}</small></li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="subtitle" data-swiper-parallax="-200"><a href="http://jawn.nathan-pousset.fr/"
+                                    target="_blank"><img src="../assets/images/logo_jawn_v2_+sombre.png"
+                                        alt="logo Jawn"></a></div>
+                        </div>
+                    </div>
+                    <div class="title" id="title-2" data-swiper-parallax="-300">
+                        <i>{% block project_page_title %}{% endblock %}</i></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="in-slide" id="in-slide-3">
+                    <div class="info">
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block study_1_title %}{% endblock %}</b></br><small>{% block study_1_subtitle %}{% endblock %}
+                                        |
+                                        2019</small></p>
+                            </div>
+                            <div class="subtitle" data-swiper-parallax="-200">
+                                <p>{% block study_1_city %}{% endblock %}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block study_2_title %}{% endblock %}</b></br><small>{% block study_2_subtitle %}{% endblock %}
+                                        | 2018</small></p>
+                            </div>
+                            <div class="subtitle" data-swiper-parallax="-200">
+                                <p>{% block study_2_city %}{% endblock %}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block study_3_title %}{% endblock %}</b></br><small>{% block study_3_subtitle %}{% endblock %}
+                                        | 2016-2018</small></p>
+                            </div>
+                            <div class="subtitle" data-swiper-parallax="-200">
+                                <p>{% block study_3_city %}{% endblock %}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block study_4_title %}{% endblock %} </b><small>-
+                                        {% block study_4_honours %}{% endblock %}</br>{% block study_4_subtitle %}{% endblock %}
+                                        | 2016</small>
+                                </p>
+                            </div>
+                            <div class="subtitle" data-swiper-parallax="-200">
+                                <p>{% block study_4_city %}{% endblock %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title" id="title-3" data-swiper-parallax="-300">
+                        <i>{% block study_page_title %}{% endblock %}</i></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="in-slide" id="in-slide-4">
+                    <div class="info">
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block hobby_1_title %}{% endblock %}</b>
+                                    <ul>
+                                        <li><small>{% block hobby_1_bullet_1 %}{% endblock %}</small></li>
+                                        <li><small>{% block hobby_1_bullet_2 %}{% endblock %}</small></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block hobby_2_title %}{% endblock %}</b> |
+                                    {% block hobby_2_subtitle %}{% endblock %}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block hobby_3_title %}{% endblock %}</b> |
+                                    {% block hobby_3_subtitle %}{% endblock %}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p><b>{% block hobby_4_title %}{% endblock %}</b> |
+                                    <small>{% block hobby_4_subtitle %}{% endblock %}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title" id="title-4" data-swiper-parallax="-300">
+                        <i>{% block hobby_page_title %}{% endblock %}</i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'svg/github_svg.twig' %}
+    {% include 'svg/download_svg.twig' %}
+
+    {% include 'svg/image_svg.twig' %}
+    {% include 'svg/hobby_svg.twig' %}
+    {% include 'svg/skill_svg.twig' %}
+    {% include 'svg/study_svg.twig' %}
+
+    {% include 'svg/united-states_svg.twig' %}
+    {% include 'svg/france_svg.twig' %}
+    <script src="./../assets/js/swiper4-5-0.min.js"></script>
+    <script src="./../assets/js/personal.js"></script>
+</body>
+
+</html>
