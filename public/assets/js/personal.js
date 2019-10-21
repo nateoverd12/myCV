@@ -9,8 +9,6 @@ for(link of linkIdioms){
     // console.log('test :', test);
   }
 };
-// const SYMBOLS = document.querySelectorAll('symbol');
-// // console.log('sybol')
 
 //// Config for swiper
 var swiper = new Swiper('.swiper-container', {
@@ -66,3 +64,5 @@ var observer = new MutationObserver(callback);
 
 // Start observing the target node for configured mutations
 observer.observe(targetNode, config);
+
+window.addEventListener('mousemove', () => swiper.autoplay.stop());
