@@ -20,7 +20,7 @@ $routeParts = explode('/', ltrim($_SERVER['PHP_SELF'], '/'));
 array_shift($routeParts);
 
 if($routeParts==['fr']){
-    echo $twig->render('idioms/french.twig', ['cc' => $cc, 'photoInPDF' => $photoInPDF]);
+    echo $twig->render('idioms/french.twig', ['cc' => $cc, 'photoInPDF' => true]);
 } elseif (empty($routeParts)){
     echo $twig->render('idioms/english.twig', ['cc' => $cc, 'photoInPDF' => $photoInPDF]);
 } else {
