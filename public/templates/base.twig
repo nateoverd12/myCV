@@ -30,25 +30,12 @@
                 </h5>
                 <div id="logos">
                     <div id="white">
-                        <a href="https://github.com/nateoverd12" target="_blank"><svg>
-                                <use xlink:href="#githubIcon">
-                            </svg></a>
-                        <a href="./assets/{% block pdf_idiom %}{% endblock %}CV_Nathan-Pousset.pdf" target="_blank">
-                            <svg>
-                                <use xlink:href="#downloadIcon">
-                            </svg></a>
+                        <a href="https://github.com/nateoverd12" target="_blank">{% include 'svg/github_svg.twig' %}</a>
+                        <a href="./assets/{% block pdf_idiom %}{% endblock %}CV_Nathan-Pousset.pdf" target="_blank">{% include 'svg/download_svg.twig' %}</a>
                     </div>
                     <div id="idioms">
-                        <a href="/fr">
-                            <svg>
-                                <use xlink:href="#franceIcon">
-                            </svg>
-                        </a>
-                        <a href="">
-                            <svg>
-                                <use xlink:href="#usIcon">
-                            </svg>
-                        </a>
+                        <a href="/fr">{% include 'svg/france_svg.twig' %}</a>
+                        <a href="/">{% include 'svg/united-states_svg.twig' %}</a>
                     </div>
                 </div>
             </div>
@@ -57,30 +44,22 @@
             <div>
                 <input id="menu-1" type="radio" name="menu" checked>
                 <label id="label-1" class="hoverButton" for="menu-1">
-                    <svg>
-                        <use xlink:href="#skillIcon">
-                    </svg>
+                    {% include 'svg/skill_svg.twig' %}
                     <span>{% block bullet_skills %}{% endblock %}</span>
                 </label>
                 <input id="menu-2" type="radio" name="menu">
                 <label id="label-2" class="hoverButton" for="menu-2">
-                    <svg>
-                        <use xlink:href="#imageIcon">
-                    </svg>
+                    {% include 'svg/image_svg.twig' %}
                     <span>{% block bullet_portfolio %}{% endblock %}</span>
                 </label>
                 <input id="menu-3" type="radio" name="menu">
                 <label id="label-3" class="hoverButton" for="menu-3">
-                    <svg>
-                        <use xlink:href="#studyIcon">
-                    </svg>
+                    {% include 'svg/study_svg.twig' %}
                     <span class="black-text">{% block bullet_study %}{% endblock %}</span>
                 </label>
                 <input id="menu-4" type="radio" name="menu">
                 <label id="label-4" class="hoverButton" for="menu-4">
-                    <svg>
-                        <use xlink:href="#passionIcon">
-                    </svg>
+                    {% include 'svg/hobby_svg.twig' %}
                     <span class="black-text">{% block bullet_hobby %}{% endblock %}</span>
                 </label>
                 <span></span>
@@ -292,16 +271,7 @@
             </div>
         </div>
     </div>
-    {% include 'svg/github_svg.twig' %}
-    {% include 'svg/download_svg.twig' %}
 
-    {% include 'svg/image_svg.twig' %}
-    {% include 'svg/hobby_svg.twig' %}
-    {% include 'svg/skill_svg.twig' %}
-    {% include 'svg/study_svg.twig' %}
-
-    {% include 'svg/united-states_svg.twig' %}
-    {% include 'svg/france_svg.twig' %}
     <script src="./../assets/js/swiper4-5-0.min.js"></script>
     <script src="./../assets/js/personal.js"></script>
 </body>

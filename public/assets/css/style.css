@@ -28,9 +28,9 @@ body {
   color: white;
 }
 
-/* #div-intro p {
-  margin-bottom: 0;
-} */
+#idioms svg:hover {
+  animation: shake 5s; 
+}
 
 #div-person,
 h3 {
@@ -44,6 +44,10 @@ h3 h3 {
 
 #contact p {
   margin: 0;
+}
+.active .borded {
+  stroke: aqua;
+  stroke-width: 27;
 }
 
 hr {
@@ -68,11 +72,12 @@ hr {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-  #logos #white , #logos #idioms {
+  #logos #white,
+  #logos #idioms {
     padding-top: 3%;
   }
 }
-@media screen and (min-width: 416px) and (max-width: 520px) and (max-aspect-ratio: 13/10){
+@media screen and (min-width: 416px) and (max-width: 520px) and (max-aspect-ratio: 13/10) {
   #contact {
     flex-wrap: wrap;
   }

@@ -1,3 +1,18 @@
+//// Set active class to link on accurated idiom svg icon
+const URL = window.location.href;
+const linkIdioms = document.getElementById('idioms').children;
+for(link of linkIdioms){
+  let href = link.href;
+  if(URL == href){
+    link.classList.add('active');
+    // let test = link.children[0].children[0].children;
+    // console.log('test :', test);
+  }
+};
+// const SYMBOLS = document.querySelectorAll('symbol');
+// // console.log('sybol')
+
+//// Config for swiper
 var swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
