@@ -1,9 +1,21 @@
+//// check country for english type (for change icon language and cv if necessary)
+// const ORIGIN = window.location.origin;
+// fetch('http://ip-api.com/json')
+//   .then((resp) => resp.json()) // Transform the data into json
+//   .then(function (data) {
+//     switch (data.country) {
+//       case 'Ireland':
+//         window.location = ORIGIN+'/ie';
+//         break;
+//     }
+// }); NO !! Now done directly in the routing.php
+
 //// Set active class to link on accurated idiom svg icon
 const URL = window.location.href;
 const linkIdioms = document.getElementById('idioms').children;
-for(link of linkIdioms){
+for (link of linkIdioms) {
   let href = link.href;
-  if(URL == href){
+  if (URL == href) {
     link.classList.add('active');
     // let test = link.children[0].children[0].children;
     // console.log('test :', test);

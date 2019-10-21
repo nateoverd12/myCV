@@ -36,8 +36,22 @@
                             title="{% block info_pdf %}{% endblock %}">{% include 'svg/download_svg.twig' %}</a>
                     </div>
                     <div id="idioms">
-                        <a href="/fr" title="version française">{% include 'svg/france_svg.twig' %}</a>
-                        <a href="/" title="english version">{% include 'svg/united-states_svg.twig' %}</a>
+                        <a href="/fr" title="version française">{% include 'country/france_svg.twig' %}</a>
+                        <a href="/" title="english version">
+                            {% if countryCode == 'AU' %}
+                            {% include 'country/australia_svg.twig' %}
+                            {% elseif countryCode == 'CA' %}
+                            {% include 'country/canada_svg.twig' %}
+                            {% elseif countryCode == 'IE' %}
+                            {% include 'country/ireland_svg.twig' %}
+                            {% elseif countryCode == 'GB' %}
+                            {% include 'country/united-kingdom_svg.twig' %}
+                            {% elseif countryCode == 'US' %}
+                            {% include 'country/united-states_svg.twig' %}
+                            {% else %}
+                            {% include 'country/england_svg.twig' %}
+                            {% endif %}
+                        </a>
                     </div>
                 </div>
             </div>

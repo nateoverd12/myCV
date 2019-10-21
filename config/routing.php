@@ -9,11 +9,15 @@
  * @link     https://github.com/WildCodeSchool/simple-mvc
  */
 
+$response = file_get_contents("http://ip-api.com/json");
+$response = json_decode($response);
+$cc = $response->countryCode;
+
 $routeParts = explode('/', ltrim($_SERVER['PHP_SELF'], '/'));
 array_shift($routeParts);
 
 if($routeParts==['fr']){
-    echo $twig->render('idioms/french.twig');
+    echo $twig->render('idioms/french.twig', ['cc' => $cc]);
 } elseif (empty($routeParts)){
     echo $twig->render('idioms/english.twig');
 } else {
