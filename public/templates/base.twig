@@ -32,7 +32,7 @@
                     <div id="white">
                         <a href="https://github.com/nateoverd12" target="_blank"
                             title="{% block info_github %}{% endblock %}">{% include 'svg/github_svg.twig' %}</a>
-                        <a href="./assets/pdf/{% block pdf_idiom %}{% endblock %}CV_Nathan-Pousset.pdf" target="_blank"
+                        <a href="./assets/pdf/CV_Nathan-Pousset_{% block pdf_idiom %}{% endblock %}{% if photoInPDF == true %}_no{% endif %}.pdf" target="_blank"
                             title="{% block info_pdf %}{% endblock %}">{% include 'svg/download_svg.twig' %}</a>
                     </div>
                     <div id="idioms">
