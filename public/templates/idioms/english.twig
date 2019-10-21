@@ -1,104 +1,107 @@
 {% extends 'base.twig' %}
 
-{% block title %}Dev.web Nathan CV{% endblock %}
+{% block title %}Dev.web Nathan Resume{% endblock %}
 
 {% block jobTitle %}Full-Stack Web Developer{% endblock %}
-{% block summary %}During my studies, I realised how much I like to discover and to learn each day, and IT makes it possible. So it will be a pleasure to handle new technology at work.{% endblock %}
+{% block summary %}During my french studies, I realised how much I like to discover and to learn daily, and IT makes it possible. So it will be a pleasure to handle new technology at work.{% endblock %}
 
+
+{% block info_github %}my Github account{% endblock %}
 {% block pdf_idiom %}en_{% endblock %}
+{% block info_pdf %}download resume{% endblock %}
 
 {% block idiom_links %}
 {% endblock %}
 
 {% block bullet_skills %}Skills{% endblock %}
 {% block bullet_portfolio %}Portfolio{% endblock %}
-{% block bullet_study %}Formation{% endblock %}
-{% block bullet_hobby %}Divers{% endblock %}
+{% block bullet_study %}Training{% endblock %}
+{% block bullet_hobby %}Hobby{% endblock %}
 
 
-{% block skill_1_title %}Programmation{% endblock %}
-{% block skill_1_data %} | PHP 7, Javascript, Python 3, SQL, VBA{% endblock %}
+{% block skill_1_title %}Programming{% endblock %}
+{% block skill_1_data %} | PHP 7, Javascript ES6, Python 3, SQL, VBA{% endblock %}
 
-{% block skill_2_title %}Framework &#38; Librairie{% endblock %}
-{% block skill_2_data %} | Symfony 4, React, Django 2{% endblock %}
+{% block skill_2_title %}Framework &#38; Library{% endblock %}
+{% block skill_2_data %} | Symfony 4, React 16, Django 2{% endblock %}
 
 {% block skill_3_title %}Web{% endblock %}
 {% block skill_3_data %} | HTML 5, (S)CSS 3, BootStrap/Semantic, Git, Scrum (Agile), Docker{% endblock %}
 
-{% block skill_4_title %}Modélisation &#38; bases de données{% endblock %}
+{% block skill_4_title %}Modelling &#38; databases{% endblock %}
 {% block skill_4_data %} | Excel, Scilab &#38; MySQL{% endblock %}
 
-{% block skill_5_title %}Création artistique{% endblock %}
+{% block skill_5_title %}Art creation{% endblock %}
 {% block skill_5_data %} | Adobe Premiere Pro &#38; Photoshop{% endblock %}
 
-{% block skill_6_title %}Langues étrangères{% endblock %}
-{% block skill_6_data %} : Anglais (C1) , Espagnol (B1){% endblock %}
+{% block skill_6_title %}Languages{% endblock %}
+{% block skill_6_data %} : French (native), English (fluent/B2) , Spanish (B1){% endblock %}
 
-{% block skill_7_title %}Bureautique{% endblock %}
+{% block skill_7_title %}Office suite{% endblock %}
 {% block skill_7_data %} | Word, PowerPoint, Excel{% endblock %}
 
-{% block skill_page_title %}Compétences{% endblock %}
+{% block skill_page_title %}Skills{% endblock %}
 
 
-{% block project_1_name %}Projet Professionnel BtoBtoC{% endblock %}
-{% block project_1_subtitle_1 %}Plateforme d'agences touristiques{% endblock %}
-{% block project_1_subtitle_2 %} en cours de réalisation en free-lance (été 2019){% endblock %}
-{% block project_1_bullet_1 %}PHP 7, MySQL, Javascript, Twig, plugin MangoPay, Cron &#38; Config Serveur{% endblock %}
-{% block project_1_bullet_2 %}Symfony 4, React, Scrum &#38; réunions avec la porteuse de projet{% endblock %}
-{% block project_1_bullet_3 %}Tunnel de recherche/réservation, 3 comptes distincts (cf. BtoBtoC), Messagerie interne, Gestion Admin{% endblock %}
+{% block project_1_name %}Professional Project BtoBtoC{% endblock %}
+{% block project_1_subtitle_1 %}Platform for tourism agencies{% endblock %}
+{% block project_1_subtitle_2 %} nearly finished as freelancer (4 months){% endblock %}
+{% block project_1_bullet_1 %}PHP 7, MySQL, Javascript, Twig, plugin MangoPay, Cron &#38; Server setup{% endblock %}
+{% block project_1_bullet_2 %}Symfony 4, React 16, Agile software dev w/ CEO{% endblock %}
+{% block project_1_bullet_3 %}Booking process, 3 type of accounts (cf. BtoBtoC), Internal messaging system, Admin managing{% endblock %}
 
-{% block project_2_name %}Projet Hubert{% endblock %}
-{% block project_2_subtitle_1 %}Site de réservation de véhicules{% endblock %}
-{% block project_2_subtitle_2 %} réalisé à 3 en 1 mois pendant ma formation{% endblock %}
+{% block project_2_name %}Training Project: <i>Hubert</i>{% endblock %}
+{% block project_2_subtitle_1 %}Vehicles booking website{% endblock %}
+{% block project_2_subtitle_2 %} realised in 1 month with 2 students{% endblock %}
 {% block project_2_bullet_1 %}PHP 7, MySQL, React, Javascript, Twig{% endblock %}
-{% block project_2_bullet_2 %}Modèle MVC, SCRUM Agile (sprint, kanban, backlog,...){% endblock %}
-{% block project_2_bullet_3 %}Recherche, Résultat, Compte (CRUD Admin), Réservation, Tunnel de paiement{% endblock %}
+{% block project_2_bullet_2 %}MVC Model, Agile software development{% endblock %}
+{% block project_2_bullet_3 %}Search, Listing, Account (Admin's CRUD), Booking process{% endblock %}
 
-{% block project_3_name %}Jeu carte au trésor{% endblock %}
-{% block project_3_subtitle %} réalisé en 1/2 jour pendant ma formation{% endblock %}
+{% block project_3_name %}Treasure Map Game{% endblock %}
+{% block project_3_subtitle %} realised in half a day as training{% endblock %}
 {% block project_3_bullet_1 %}PHP 7, Symfony 4, MySQL, Twig{% endblock %}
-{% block project_3_bullet_2 %}Jeu réalisé seul comme évalutation{% endblock %}
+{% block project_3_bullet_2 %}Game done alone as assessment{% endblock %}
 
-{% block project_4_name %}Projet Jawn{% endblock %}
-{% block project_4_subtitle_1 %}Site vitrine de Nantes {% endblock %}
-{% block project_4_subtitle_2 %}réalisé à 4 en 1ère semaine pendant ma formation{% endblock %}
-{% block project_4_bullet_1 %}Galerie photo via Javascript{% endblock %}
-{% block project_4_bullet_2 %}Carte (OpenWheaterMap) &#38; contact via mail (bundle Swift Mailer){% endblock %}
+{% block project_4_name %}1st Training Project: <i>Jawn</i>{% endblock %}
+{% block project_4_subtitle_1 %}Showcase Site about Nantes city {% endblock %}
+{% block project_4_subtitle_2 %}realised in foursome during 1st training week{% endblock %}
+{% block project_4_bullet_1 %}Photo gallery in Javascript{% endblock %}
+{% block project_4_bullet_2 %}Map (OpenWheaterMap) &#38; mail contact (Swift Mailer bundle){% endblock %}
 
 {% block project_page_title %}Portfolio{% endblock %}
 
 
-{% block study_1_title %}Formation de Développeur Web et Mobile{% endblock %}
+{% block study_1_title %}Web developer training courses{% endblock %}
 {% block study_1_subtitle %}Wild Code School{% endblock %}
-{% block study_1_city %}Nantes{% endblock %}
+{% block study_1_city %}Nantes, Fr{% endblock %}
 
-{% block study_2_title %}Pré-Master programme Grande Ecole{% endblock %}
+{% block study_2_title %}3rd year in major French Business School{% endblock %}
 {% block study_2_subtitle %}Grenoble Ecole de Management (GEM){% endblock %}
-{% block study_2_city %}Grenoble{% endblock %}
+{% block study_2_city %}Grenoble, Fr{% endblock %}
 
-{% block study_3_title %}Licence de maths{% endblock %}
-{% block study_3_subtitle %}Université Rennes 1{% endblock %}
-{% block study_3_city %}Rennes{% endblock %}
+{% block study_3_title %}B.A. in mathematics{% endblock %}
+{% block study_3_subtitle %}<i>Université Rennes 1</i>{% endblock %}
+{% block study_3_city %}Rennes, Fr{% endblock %}
 
-{% block study_4_title %}Bac S {% endblock %}
-{% block study_4_honours %} mention très bien{% endblock %}
-{% block study_4_subtitle %}Lycée Bertrand d'Argentré{% endblock %}
-{% block study_4_city %}Vitré{% endblock %}
+{% block study_4_title %}Science A-levels{% endblock %}
+{% block study_4_honours %} with highest honour{% endblock %}
+{% block study_4_subtitle %}Bertrand d'Argentré High School{% endblock %}
+{% block study_4_city %}Vitré, Fr{% endblock %}
 
-{% block study_page_title %}Formation{% endblock %}
+{% block study_page_title %}Training{% endblock %}
 
 
-{% block hobby_1_title %}Cultures &#38; langues étrangères{% endblock %}
-{% block hobby_1_bullet_1 %}Skype avec des natifs (USA,Mex.,Esp.,Am-Centrale){% endblock %}
-{% block hobby_1_bullet_2 %}Workaway: 5 semaines en immersion à vivre et travailler avec une famille anglaise en milieu rural{% endblock %}
+{% block hobby_1_title %}Culture &#38; languages{% endblock %}
+{% block hobby_1_bullet_1 %}Skype w/ native speakers (USA,Mexico,Spain,...){% endblock %}
+{% block hobby_1_bullet_2 %}<i>Workaway</i>: five-week to live and work in farm w/ a native english family{% endblock %}
 
-{% block hobby_2_title %}Cinéma{% endblock %}
-{% block hobby_2_subtitle %}Réalisation &#38; direction d'un plateau de tournage à Grenoble{% endblock %}
+{% block hobby_2_title %}Movie Making{% endblock %}
+{% block hobby_2_subtitle %}Film set direction in Grenoble{% endblock %}
 
 {% block hobby_3_title %}Sports{% endblock %}
-{% block hobby_3_subtitle %}Ligues Américaines (NBA,NFL, NCAA){% endblock %}
+{% block hobby_3_subtitle %}Americans leagues (NBA, NFL, NCAA){% endblock %}
 
-{% block hobby_4_title %}Autres{% endblock %}
-{% block hobby_4_subtitle %}Philosophie, Musique, Entrepreneuriat, ... : dans tous ces domaines ainsi qu'en informatique, j'aime être en perpétuel apprentissage, rendu facile grâce à une infinité de ressource en ligne.{% endblock %}
+{% block hobby_4_title %}More{% endblock %}
+{% block hobby_4_subtitle %}Philosophy, Music, Creator, ... : as with IT, I like being in constant discovering and doing, which is now easier with all the online contents and networks.{% endblock %}
 
-{% block hobby_page_title %}Centres d'intérêts{% endblock %}
+{% block hobby_page_title %}Hobby{% endblock %}

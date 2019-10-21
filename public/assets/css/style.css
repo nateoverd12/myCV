@@ -1,3 +1,11 @@
+:root {
+  --myBlue: #1e32c8;
+  --myRed: #fa1e14;
+  --myYellow: #ffc800;
+  --myGrey: #999999;
+  --myHover: #cccccc;
+}
+
 body {
   margin: 0;
   font-family: serif;
@@ -22,14 +30,14 @@ body {
 #div-intro {
   font-size: 2.9vmin;
   margin: 0 0 0 2vw;
-  color: #cccccc;
+  color: var(--myHover);
 }
 #div-intro strong {
   color: white;
 }
 
 #idioms svg:hover {
-  animation: shake 5s; 
+  animation: shake 5s;
 }
 
 #div-person,
@@ -45,13 +53,43 @@ h3 h3 {
 #contact p {
   margin: 0;
 }
-.active .borded {
-  stroke: aqua;
-  stroke-width: 27;
-}
 
 hr {
   margin-right: 5%;
+}
+
+#tabbar {
+  z-index: 5;
+}
+
+.active .borded {
+  stroke: aqua;
+  stroke-width: 37;
+  stroke-dasharray: 1000;
+  /* stroke-dasharray: 1500; for a complete turn around */
+  stroke-dashoffset: 1500;
+  animation: dash1 2s linear alternate infinite;
+}
+#idioms svg:hover .borded {
+  stroke: aqua;
+  stroke-width: 37;
+  stroke-dasharray: 75;
+  animation: dash2 4s linear infinite;
+}
+
+@keyframes dash2 {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+@keyframes dash1 {
+  from {
+    stroke-dashoffset: 1500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media screen and (min-width: 416px) and (max-aspect-ratio: 13/10) {
@@ -97,7 +135,14 @@ hr {
   color: white;
 }
 #contact a:hover {
-  color: #cccccc;
+  color: var(--myHover);
+}
+#credits {
+  color: var(--myHover);
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  font-size: 5px !important;
 }
 
 .split {
@@ -258,7 +303,7 @@ hr {
   display: flex;
   align-self: flex-end;
   padding: 1vh 1vw 0 1vw;
-  box-shadow: #ffc800 0px -3.4vmin 0px inset;
+  box-shadow: var(--myYellow) 0px -3.4vmin 0px inset;
   margin: 0 5px 5px 0;
 }
 
@@ -283,7 +328,7 @@ hr {
 }
 
 .swiper-slide .subtitile a:hover {
-  background-color: #cccccc;
+  background-color: var(--myHover);
 }
 
 .swiper-slide .text p,
@@ -297,8 +342,6 @@ hr {
   flex-direction: column;
   justify-content: space-around;
 }
-
-/* #portfolio {justify-content: flex-end !important} */
 
 .row {
   display: flex;
@@ -417,49 +460,49 @@ hr {
 @media screen and (max-aspect-ratio: 13/10) {
   #tabbar > div input:nth-of-type(1):checked + label + input + label + input label + input + label + span {
     --x: 0;
-    --onglet: #1e32c8;
+    --onglet: var(--myBlue);
   }
 }
 @media screen and (min-aspect-ratio: 13/10) {
   #tabbar > div input:nth-of-type(1):checked + label + input + label + input label + input + label + span {
     --x: 2%;
-    --onglet: #1e32c8;
+    --onglet: var(--myBlue);
   }
 }
 @media screen and (max-aspect-ratio: 13/10) {
   #tabbar > div input:nth-of-type(2):checked + label + input + label + input + label + span {
     --x: 74.8%;
-    --onglet: #fa1e14;
+    --onglet: var(--myRed);
   }
 }
 @media screen and (min-aspect-ratio: 13/10) {
   #tabbar > div input:nth-of-type(2):checked + label + input + label + input + label + span {
     --x: 29%;
-    --onglet: #fa1e14;
+    --onglet: var(--myRed);
   }
 }
 @media screen and (max-aspect-ratio: 13/10) {
   #tabbar > div input:nth-of-type(3):checked + label + input + label + span {
     --x: 149.6%;
-    --onglet: #ffc800;
+    --onglet: var(--myYellow);
   }
 }
 @media screen and (min-aspect-ratio: 13/10) {
   #tabbar > div input:nth-of-type(3):checked + label + input + label + span {
     --x: 56.5%;
-    --onglet: #ffc800;
+    --onglet: var(--myYellow);
   }
 }
 @media screen and (max-aspect-ratio: 13/10) {
   #tabbar > div input:nth-of-type(4):checked + label + span {
     --x: 224.4%;
-    --onglet: #666666;
+    --onglet: var(--myGrey);
   }
 }
 @media screen and (min-aspect-ratio: 13/10) {
   #tabbar > div input:nth-of-type(4):checked + label + span {
     --x: 84%;
-    --onglet: #666666;
+    --onglet: var(--myGrey);
   }
 }
 #tabbar > div input:checked + label svg {
@@ -486,7 +529,7 @@ hr {
     transform: translateX(var(--x));
     left: -10px;
     top: 0;
-    --onglet: #1e32c8;
+    --onglet: var(--myBlue);
   }
 }
 @media screen and (min-aspect-ratio: 13/10) {
@@ -495,7 +538,7 @@ hr {
     transform: translateY(var(--x));
     left: -25%;
     top: 9%;
-    --onglet: #1e32c8;
+    --onglet: var(--myBlue);
   }
 }
 #tabbar > div > span:after {
@@ -524,29 +567,29 @@ hr {
 }
 
 #label-1 {
-  background-color: #1e32c8;
+  background-color: var(--myBlue);
 }
 #label-2 {
-  background-color: #fa1e14;
+  background-color: var(--myRed);
 }
 #label-3 {
-  background-color: #ffc800;
+  background-color: var(--myYellow);
 }
 #label-4 {
-  background-color: #666666;
+  background-color: var(--myGrey);
 }
 
 #in-slide-1 {
-  border: solid #1e32c8 6px;
+  border: solid var(--myBlue) 6px;
 }
 #in-slide-2 {
-  border: solid #fa1e14 6px;
+  border: solid var(--myRed) 6px;
 }
 #in-slide-3 {
-  border: solid #ffc800 6px;
+  border: solid var(--myYellow) 6px;
 }
 #in-slide-4 {
-  border: solid #666666 6px;
+  border: solid var(--myGrey) 6px;
 }
 
 .black-text {
