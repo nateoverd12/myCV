@@ -3,10 +3,10 @@
 {% block title %}Dev.web Nathan Resume{% endblock %}
 
 {% block jobTitle %}Full-Stack Web Developer{% endblock %}
-{% block summary %}During my french studies, I realised how much I like to discover and to learn daily, and IT makes it possible. So it will be a pleasure to handle new technologies at work.{% endblock %}
+{% block summary %}My studies and jobs make me understand how much I like to discover and to learn daily, and IT makes it possible. So it will be a pleasure to handle new technologies at work.{% endblock %}
 
 
-{% block info_github %}my Github account{% endblock %}
+{# {% block info_github %}my Github account{% endblock %} #}
 {% block pdf_idiom %}en{% endblock %}
 {% block info_pdf %}download resume{% endblock %}
 
@@ -19,23 +19,23 @@
 {% block bullet_hobby %}Hobby{% endblock %}
 
 
-{% block skill_1_title %}Programming{% endblock %}
-{% block skill_1_data %} | PHP 7, Javascript ES6, Python 3, SQL, VBA{% endblock %}
+{% block skill_1_title %}Technologies{% endblock %}
+{# {% block skill_1_data %} | PHP 7, Javascript ES6, Python 3, SQL, VBA{% endblock %} #}
 
-{% block skill_2_title %}Framework &#38; Library{% endblock %}
-{% block skill_2_data %} | Symfony 4, React 16, Django 2{% endblock %}
+{% block skill_2_title %}Web services{% endblock %}
+{# {% block skill_2_data %} | Symfony 4, React 16, Django 2{% endblock %} #}
 
-{% block skill_3_title %}Web{% endblock %}
-{% block skill_3_data %} | HTML 5, (S)CSS 3, BootStrap/Semantic, Git, Scrum (Agile), Docker{% endblock %}
+{% block skill_3_title %}Development concepts{% endblock %}
+{% block skill_3_data %} | Domain Driven Development, Behaviour Driven Development, Test Driven Development, MVC and Hexagonal architecture (cf. clean architecture), Clean Code{% endblock %}
 
-{% block skill_4_title %}Modelling &#38; databases{% endblock %}
-{% block skill_4_data %} | Excel, Scilab &#38; MySQL{% endblock %}
+{% block skill_4_title %}Organisation{% endblock %}
+{% block skill_4_data %} | Agile software development, Squad like "spotify", working at office and/or remotely{% endblock %}
 
 {% block skill_5_title %}Art creation{% endblock %}
-{% block skill_5_data %} | Adobe Premiere Pro &#38; Photoshop{% endblock %}
+{% block skill_5_data %} | Adobe Premiere Pro &#38; Photoshop &#38; Illustrator{% endblock %}
 
 {% block skill_6_title %}Languages{% endblock %}
-{% block skill_6_data %} : French (native), English (fluent/B2) , Spanish (B1){% endblock %}
+{% block skill_6_data %} : French (native), English (fluent/C1) , Spanish (B1){% endblock %}
 
 {% block skill_7_title %}Office suite{% endblock %}
 {% block skill_7_data %} | Word, PowerPoint, Excel{% endblock %}
@@ -43,37 +43,32 @@
 {% block skill_page_title %}Skills{% endblock %}
 
 
-{% block project_1_name %}Professional Project BtoBtoC{% endblock %}
-{% block project_1_subtitle_1 %}Platform for tourism agencies{% endblock %}
-{% block project_1_subtitle_2 %} nearly finished as freelancer (4 months){% endblock %}
-{% block project_1_bullet_1 %}PHP 7, MySQL, Javascript, Twig, plugin MangoPay, Cron &#38; Server setup{% endblock %}
-{% block project_1_bullet_2 %}Symfony 4, React 16, Agile software dev w/ CEO{% endblock %}
-{% block project_1_bullet_3 %}Booking process, 3 type of accounts (cf. BtoBtoC), Internal messaging system, Admin managing{% endblock %}
+{% block project_1_name %}Back-End Developper at Edflex | MyMooc{% endblock %}
+{% block project_1_subtitle_1 %}December 2019 to November 2021 | Nantes - Paris - Biarritz{% endblock %}
+{% block project_1_subtitle_2 %}SaaS platform self-presented as the "online courses netflix"{% endblock %}
+{% block project_1_bullet_1 %}Concepts : DDD, BDD (behat), TDD (phpUnit), Hexagonal architecture, continuous integration{% endblock %}
+{% block project_1_bullet_2 %}Tech : PHP 8, MySQL, React, Messenger (and various Symfony components), Kubernetes, Twig, HTML (// mails){% endblock %}
+{% block project_1_bullet_3 %}Services : Docker, API, RabbitMQ, GitLab, AWS, Oauth2, SSO SamlV2 / JWS, Postman, Slack integration, GoogleSuite, ElasticSearch, LocoTranslate, PhpStan{% endblock %}
+{% block project_1_bullet_4 %}Organisation : Agile software development (Jira, scrum, sprint, poker planning,...) - first at office and then in remote work (cf. COVID-19 crisis) - I was also "Tech Implementation Manager" for the abroad customers (US and South America) or French speaking (cf. SSO and API){% endblock %}
 
-{% block project_2_name %}Training Project: <i>Hubert</i>{% endblock %}
-{% block project_2_subtitle_1 %}Vehicles booking website{% endblock %}
-{% block project_2_subtitle_2 %} realised in 1 month with 2 students{% endblock %}
-{% block project_2_bullet_1 %}PHP 7, MySQL, React, Javascript, Twig{% endblock %}
-{% block project_2_bullet_2 %}MVC Model, Agile software development{% endblock %}
-{% block project_2_bullet_3 %}Search, Listing, Account (Admin's CRUD), Booking process{% endblock %}
+{% block project_2_name %}Professional Project BtoBtoC{% endblock %}
+{% block project_2_subtitle_1 %}Platform for tourism agencies{% endblock %}
+{% block project_2_subtitle_2 %} made as freelancer in 4 months{% endblock %}
+{% block project_2_bullet_1 %}PHP 7, MySQL, Javascript, Twig, plugin MangoPay, Cron &#38; Server setup{% endblock %}
+{% block project_2_bullet_2 %}Symfony 4, React 16, Agile software dev w/ CEO{% endblock %}
+{% block project_2_bullet_3 %}Booking process, 3 type of accounts (cf. BtoBtoC), Internal messaging system, Admin managing{% endblock %}
 
-{% block project_3_name %}Treasure Map Game{% endblock %}
-{% block project_3_subtitle %} realised in half a day as training{% endblock %}
-{% block project_3_bullet_1 %}PHP 7, Symfony 4, MySQL, Twig{% endblock %}
-{% block project_3_bullet_2 %}Game done alone as assessment{% endblock %}
-
-{% block project_4_name %}1st Training Project: <i>Jawn</i>{% endblock %}
-{% block project_4_subtitle_1 %}Showcase Site about Nantes city {% endblock %}
-{% block project_4_subtitle_2 %}realised in foursome during 1st training week{% endblock %}
-{% block project_4_bullet_1 %}Photo gallery in Javascript{% endblock %}
-{% block project_4_bullet_2 %}Map (OpenWheaterMap) &#38; mail contact (Swift Mailer bundle){% endblock %}
+{% block project_3_name %}Several school projets at WildCodeSchool{% endblock %}
+{% block project_3_subtitle %} made alone or with teammates (cf. Agile software development){% endblock %}
+{% block project_3_bullet_1 %}PHP 7, Symfony 4, React 16, JS, MySQL, Twig{% endblock %}
+{% block project_3_bullet_2 %}MVC design pattern, API, SCRUM Agile (sprint, kanban, backlog,...){% endblock %}
 
 {% block project_page_title %}Portfolio{% endblock %}
 
 
 {% block study_1_title %}Web developer training courses{% endblock %}
 {% block study_1_subtitle %}Wild Code School{% endblock %}
-{# {% block study_1_city %}Nantes, Fr{% endblock %} #}
+{% block study_1_city %}Nantes, France{% endblock %}
 
 {% block study_2_title %}3rd year in major French Business School{% endblock %}
 {% block study_2_subtitle %}Grenoble Ecole de Management (GEM){% endblock %}
@@ -99,7 +94,7 @@
 {% block hobby_2_subtitle %}Film set direction in Grenoble{% endblock %}
 
 {% block hobby_3_title %}Sports{% endblock %}
-{% block hobby_3_subtitle %}Americans leagues (NBA, NFL, NCAA){% endblock %}
+{% block hobby_3_subtitle %}Running, Surf, Basket, Rugby, Football (soccer and US){% endblock %}
 
 {% block hobby_4_title %}More{% endblock %}
 {% block hobby_4_subtitle %}Philosophy, Music, diverse Creation, ... : as with IT, I like being in constant discovering and doing, which is now easier with all the online contents and networks.{% endblock %}
