@@ -3,9 +3,9 @@
 {% block title %}Dev.web Nathan CV{% endblock %}
 
 {% block jobTitle %}Développeur Web Full-Stack{% endblock %}
-{% block summary %}Au fil de mes études, j'ai réalisé que j'aime apprendre et découvrir quotidiennement ce que me permet l'informatique. Je serai d'ailleurs ravi d'étudier une nouvelle technologie si mon travail le nécessite.{% endblock %}
+{% block summary %}Au fil de mon parcours, j'ai réalisé que j'aime apprendre et découvrir quotidiennement ce que me permet l'informatique. Je serai d'ailleurs ravi d'étudier une nouvelle technologie si mon travail le nécessite.{% endblock %}
 
-{% block info_github %}mon compte Github{% endblock %}
+{# {% block info_github %}mon compte Github{% endblock %} #}
 {% block pdf_idiom %}fr{% endblock %}
 {% block info_pdf %}télécharger le cv{% endblock %}
 
@@ -23,20 +23,20 @@
 {% block bullet_hobby %}Divers{% endblock %}
 
 
-{% block skill_1_title %}Programmation{% endblock %}
-{% block skill_1_data %} | PHP 7, Javascript ES6, Python 3, SQL, VBA{% endblock %}
+{% block skill_1_title %}Technologies{% endblock %}
+{% block skill_1_data %} | PHP 8, React 16, Symfony 5, Javascript ES6, Python 3, SQL, VBA, HTML5, (S)CSS 3{% endblock %}
 
-{% block skill_2_title %}Framework &#38; Librairie{% endblock %}
-{% block skill_2_data %} | Symfony 4, React, Django 2{% endblock %}
+{% block skill_2_title %}Services web{% endblock %}
+{% block skill_2_data %} | Docker, API REST, RabbitMQ, GitHub/GitLab, AWS, Oauth2, SSO SamlV2 / JWS, Postman{% endblock %}
 
-{% block skill_3_title %}Web{% endblock %}
-{% block skill_3_data %} | HTML 5, (S)CSS 3, BootStrap/Semantic, Git, Scrum (Agile), Docker{% endblock %}
+{% block skill_3_title %}Concepts de Développement{% endblock %}
+{% block skill_3_data %} | Domain Driven Development, Behaviour Driven Development, Test Driven Development, MVC et Architecture Hexagonale{% endblock %}
 
-{% block skill_4_title %}Modélisation &#38; bases de données{% endblock %}
-{% block skill_4_data %} | Excel, Scilab &#38; MySQL{% endblock %}
+{% block skill_4_title %}Organisation{% endblock %}
+{% block skill_4_data %} | Méthodes Agile, Squad type "spotify", présentiel et/ou télé-travail{% endblock %}
 
 {% block skill_5_title %}Création artistique{% endblock %}
-{% block skill_5_data %} | Adobe Premiere Pro &#38; Photoshop{% endblock %}
+{% block skill_5_data %} | Adobe Premiere Pro &#38; Photoshop &#38; Illustrator{% endblock %}
 
 {% block skill_6_title %}Langues étrangères{% endblock %}
 {% block skill_6_data %} : Anglais (C1) , Espagnol (B1){% endblock %}
@@ -47,37 +47,32 @@
 {% block skill_page_title %}Compétences{% endblock %}
 
 
-{% block project_1_name %}Projet Professionnel BtoBtoC{% endblock %}
-{% block project_1_subtitle_1 %}Plateforme d'agences touristiques{% endblock %}
-{% block project_1_subtitle_2 %} en cours de réalisation en free-lance (4 mois){% endblock %}
-{% block project_1_bullet_1 %}PHP 7, MySQL, Javascript, Twig, plugin MangoPay, Cron &#38; Config Serveur{% endblock %}
-{% block project_1_bullet_2 %}Symfony 4, React, Scrum &#38; réunions avec la porteuse de projet{% endblock %}
-{% block project_1_bullet_3 %}Tunnel de recherche/réservation, 3 types de comptes (cf. BtoBtoC), Messagerie interne, Gestion Admin{% endblock %}
+{% block project_1_name %}Développeur Back-End chez Edflex | MyMooc{% endblock %}
+{% block project_1_subtitle_1 %}Décembre 2019 - Novembre 2021 (CDI) | Nantes - Paris - Biarritz{% endblock %}
+{% block project_1_subtitle_2 %}plateforme SaaS surnommée le "netflix de la formation en ligne"{% endblock %}
+{% block project_1_bullet_1 %}Concepts : DDD, BDD (behat), TDD (phpUnit), Architecture Hexagonale, intégration continue{% endblock %}
+{% block project_1_bullet_2 %}Tech : PHP 8, MySQL, React, Messenger (et divers composants Symfony), Kubernetes, Twig, HTML (// emails){% endblock %}
+{% block project_1_bullet_3 %}Services : Docker, API, RabbitMQ, GitLab, AWS, Oauth2, SSO SamlV2 / JWS, Postman, intégration Slack, GoogleSuite, ElasticSearch, LocoTranslate{% endblock %}
+{% block project_1_bullet_4 %}Organisation : méthodes Agile (Jira, scrum, sprint, poker planning,...) - d'abord en présentiel puis en télé-travail (cf.pandémie COVID-19) - j'étais également "Tech Implementation Manager" pour nos clients étrangers (US et AmL) ou francophones (// SSO et API){% endblock %}
 
-{% block project_2_name %}Projet Hubert{% endblock %}
-{% block project_2_subtitle_1 %}Site de réservation de véhicules{% endblock %}
-{% block project_2_subtitle_2 %} réalisé à 3 en 1 mois pendant ma formation{% endblock %}
-{% block project_2_bullet_1 %}PHP 7, MySQL, React, Javascript, Twig{% endblock %}
-{% block project_2_bullet_2 %}Modèle MVC, SCRUM Agile (sprint, kanban, backlog,...){% endblock %}
-{% block project_2_bullet_3 %}Recherche, Résultat, Compte (CRUD Admin), Réservation, Tunnel de paiement{% endblock %}
+{% block project_2_name %}Projet Professionnel BtoBtoC{% endblock %}
+{% block project_2_subtitle_1 %}Plateforme d'agences touristiques{% endblock %}
+{% block project_2_subtitle_2 %} réalisé en free-lance (4 mois){% endblock %}
+{% block project_2_bullet_1 %}PHP 7, MySQL, Javascript, Twig, Webpack Encore, Cron &#38; Config Serveur{% endblock %}
+{% block project_2_bullet_2 %}Symfony 4, React 16, Scrum &#38; réunions avec la porteuse de projet{% endblock %}
+{% block project_2_bullet_3 %}Tunnel de recherche/réservation, 3 types de comptes (cf. BtoBtoC), Messagerie interne, Gestion Admin{% endblock %}
 
-{% block project_3_name %}Jeu carte au trésor{% endblock %}
-{% block project_3_subtitle %} réalisé en 1/2 jour pendant ma formation{% endblock %}
-{% block project_3_bullet_1 %}PHP 7, Symfony 4, MySQL, Twig{% endblock %}
-{% block project_3_bullet_2 %}Jeu réalisé seul comme évalutation{% endblock %}
-
-{% block project_4_name %}Projet Jawn{% endblock %}
-{% block project_4_subtitle_1 %}Site vitrine de Nantes {% endblock %}
-{% block project_4_subtitle_2 %}réalisé à 4 en 1ère semaine pendant ma formation{% endblock %}
-{% block project_4_bullet_1 %}Galerie photo via Javascript{% endblock %}
-{% block project_4_bullet_2 %}Carte (OpenWheaterMap) &#38; contact via mail (bundle Swift Mailer){% endblock %}
+{% block project_3_name %}Multiple projets école - WildCodeSchool{% endblock %}
+{% block project_3_subtitle %} réalisé en individuel ou collectif (cf. méthodes SCRUM Agile){% endblock %}
+{% block project_3_bullet_1 %}PHP 7, Symfony 4, React 16, JS, MySQL, Twig{% endblock %}
+{% block project_3_bullet_2 %}Modèle MVC, API, SCRUM Agile (sprint, kanban, backlog,...){% endblock %}
 
 {% block project_page_title %}Portfolio{% endblock %}
 
 
 {% block study_1_title %}Formation de Développeur Web et Mobile{% endblock %}
 {% block study_1_subtitle %}Wild Code School{% endblock %}
-{# {% block study_1_city %}Nantes{% endblock %} #}
+{% block study_1_city %}Nantes{% endblock %}
 
 {% block study_2_title %}Pré-Master programme Grande Ecole{% endblock %}
 {% block study_2_subtitle %}Grenoble Ecole de Management (GEM){% endblock %}
@@ -103,7 +98,7 @@
 {% block hobby_2_subtitle %}Réalisation &#38; direction d'un plateau de tournage à Grenoble{% endblock %}
 
 {% block hobby_3_title %}Sports{% endblock %}
-{% block hobby_3_subtitle %}Ligues Américaines (NBA,NFL, NCAA){% endblock %}
+{% block hobby_3_subtitle %}Running, Surf, Basket, Rugby, Football (soccer et US){% endblock %}
 
 {% block hobby_4_title %}Autres{% endblock %}
 {% block hobby_4_subtitle %}Philosophie, Musique, Entrepreneuriat, ... : dans tous ces domaines ainsi qu'en informatique, j'aime être en perpétuel apprentissage, rendu facile grâce à une infinité de ressource en ligne.{% endblock %}

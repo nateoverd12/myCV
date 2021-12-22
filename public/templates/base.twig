@@ -26,12 +26,12 @@
             </p>
             <hr>
             <div id="contact">
-                <h5><a href="mailto:nathan.pousset@protonmail.com">nathan.pousset@protonmail.com</a></br>07 50 38 79 74
+                <h5><a href="mailto:nathan.pousset@protonmail.com">nathan.pousset@protonmail.com</a></br>Biarritz | 07 50 38 79 74
                 </h5>
                 <div id="logos">
                     <div id="white">
-                        <a href="https://github.com/nateoverd12" target="_blank"
-                            title="{% block info_github %}{% endblock %}">{% include 'svg/github_svg.twig' %}</a>
+                        {# <a href="https://github.com/nateoverd12" target="_blank"
+                            title="{% block info_github %}{% endblock %}">{% include 'svg/github_svg.twig' %}</a> #}
                         <a href="./assets/pdf/CV_Nathan-Pousset_{% block pdf_idiom %}{% endblock %}{% if photoInPDF == false %}_no{% endif %}.pdf" target="_blank"
                             title="{% block info_pdf %}{% endblock %}">{% include 'svg/download_svg.twig' %}</a>
                     </div>
@@ -142,18 +142,19 @@
                         <div class="row">
                             <div class="text" data-swiper-parallax="-100">
                                 <p><b>{% block project_1_name %}{% endblock %}</b></br>
-                                    <small>{% block project_1_subtitle_1 %}{% endblock %}
+                                    <small>{% block project_1_subtitle_1 %}{% endblock %}</br>
                                         <i> {% block project_1_subtitle_2 %}{% endblock %}</i></small></br>
                                     <ul>
                                         <li><small>{% block project_1_bullet_1 %}{% endblock %}</small></li>
                                         <li><small>{% block project_1_bullet_2 %}{% endblock %}</small>
                                         </li>
                                         <li><small>{% block project_1_bullet_3 %}{% endblock %}</small></li>
+                                        <li><small>{% block project_1_bullet_4 %}{% endblock %}</small></li>
                                     </ul>
                                 </p>
                             </div>
-                            <div class="subtitle" data-swiper-parallax="-200"><img src="../assets/images/small-logo.png"
-                                    alt="logo click and trip" id="clickNTrip"></div>
+                            <div class="subtitle" data-swiper-parallax="-200"><img src="../assets/images/mymooc_became_edflex.jpg"
+                                    alt="logo Edflex"></div>
                         </div>
                         <div class="row">
                             <div class="text" data-swiper-parallax="-100">
@@ -167,9 +168,8 @@
                                     </ul>
                                 </p>
                             </div>
-                            <div class="subtitle" data-swiper-parallax="-200"><a href="http://hubert.nathan-pousset.fr/"
-                                    target="_blank"><img src="../assets/images/icon_hubert_H_color.png"
-                                        alt="logo Hubert"></a></div>
+                            <div class="subtitle" data-swiper-parallax="-200"><img src="../assets/images/small-logo.png"
+                                    alt="logo click and trip" id="clickNTrip"></div>
                         </div>
                         <div class="row">
                             <div class="text" data-swiper-parallax="-100">
@@ -182,21 +182,7 @@
                             </div>
                             <div class="subtitle" data-swiper-parallax="-200"><a
                                     href="http://gamemap.nathan-pousset.fr/" target="_blank"><img
-                                        src="../assets/images/boatgame.JPG" alt="logo jeu carte au trésor"></a></div>
-                        </div>
-                        <div class="row">
-                            <div class="text" data-swiper-parallax="-100">
-                                <p><b>{% block project_4_name %}{% endblock %}</b></br><small>
-                                        {% block project_4_subtitle_1 %}{% endblock %}<i>{% block project_4_subtitle_2 %}{% endblock %}</i></small>
-                                    <ul>
-                                        <li><small>{% block project_4_bullet_1 %}{% endblock %}</small></li>
-                                        <li><small>{% block project_4_bullet_2 %}{% endblock %}</small></li>
-                                    </ul>
-                                </p>
-                            </div>
-                            <div class="subtitle" data-swiper-parallax="-200"><a href="http://jawn.nathan-pousset.fr/"
-                                    target="_blank"><img src="../assets/images/logo_jawn_v2_+sombre.png"
-                                        alt="logo Jawn"></a></div>
+                                        src="../assets/images/wcs.png" alt="logo Wild Code School"></a></div>
                         </div>
                     </div>
                     <div class="title" id="title-2" data-swiper-parallax="-300">
