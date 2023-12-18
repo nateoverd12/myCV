@@ -353,9 +353,6 @@ hr {
 
 @media screen and (max-aspect-ratio: 13/10) {
 
-  #slider {
-    height: 65dvh;
-  }
   .in-slide {
     padding-top: 65px;
     padding-left: 2%;
