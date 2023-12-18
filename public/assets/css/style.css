@@ -350,7 +350,7 @@ hr {
 
 @media screen and (max-aspect-ratio: 13/10) {
   .in-slide {
-    padding-top: 65px;
+    padding-top: 8vh;
     padding-left: 2%;
   }
   .swiper-slide .text p,
