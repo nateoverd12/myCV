@@ -157,6 +157,7 @@ hr {
   #div-intro {
     /* width: 50vmin; */
     padding-top: 2vh;
+    padding-top: 2dvh;
   }
   #logos {
     display: flex;
@@ -173,6 +174,7 @@ hr {
     top: 0;
     /* width: 100vw; */
     height: 35vh;
+    height: 35dvh;
     width: 96%;
     padding: 0 2%;
     display: flex;
@@ -196,6 +198,7 @@ hr {
     bottom: 0;
     width: 100vw;
     height: 65vh;
+    height: 65dvh;
   }
 
   #tabbar {
@@ -349,8 +352,12 @@ hr {
 }
 
 @media screen and (max-aspect-ratio: 13/10) {
+
+  #slider {
+    height: 65dvh;
+  }
   .in-slide {
-    padding-top: 8vh;
+    padding-top: 65px;
     padding-left: 2%;
   }
   .swiper-slide .text p,
